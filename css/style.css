@@ -1,0 +1,83 @@
+a {
+  text-decoration: none !important;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 5;
+  background: #fafafa;
+}
+
+#header .menu ul li {
+  padding: 15px;
+}
+
+#header .menu ul li a {
+  padding: 10px 0;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+}
+
+#header .menu ul li a:hover::after {
+  width: 20px;
+  opacity: 1;
+}
+
+#header .menu ul li a::after {
+  content: '';
+  background: crimson;
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 2px;
+}
+
+#started {
+  background: url(../photo/hero_01.png);
+  background-color: #fafafa;
+  background-position: 78% 100px;
+  background-size: 640px auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#started .start-text h1 {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 88px;
+  letter-spacing: -1.9px;
+}
+
+#started .started-item {
+  padding: 70px 40px 70px 40px;
+  background: #ffffff;
+  color: #000000;
+}
+
+#started .started-item:hover {
+  background: crimson;
+  color: #ffffff;
+}
+
+#started .started-item:hover i {
+  color: #ffffff;
+}
+
+#started .started-item i {
+  margin-bottom: 30px;
+  color: crimson;
+}
+/*# sourceMappingURL=style.css.map */

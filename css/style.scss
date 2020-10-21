@@ -1,0 +1,85 @@
+a{
+    text-decoration: none !important;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 5;
+    background:#fafafa;
+    .menu{
+        ul{
+            li{
+                padding: 15px;
+
+
+                a{
+                    padding: 10px 0;
+                    color: #000000;
+                    font-weight: 700;
+                    position: relative;
+                    &:hover{
+                        &::after{
+                            width: 20px;
+                            opacity: 1;
+                        }
+                    }
+                        &::after{
+                            content:'';
+                            background: crimson;
+                            position: absolute;
+                            left: 0;
+                            width: 0;
+                            bottom: 0;
+                            opacity: 0;
+                            transition: .4s;
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+#started{
+    background: url(../photo/hero_01.png);
+    background-color: #fafafa;
+    background-position: 78% 100px;
+    background-size: 640px auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    
+.start-text{
+    h1{
+        font-size: 78px;
+        font-weight: 800;
+        line-height: 88px;
+        letter-spacing: -1.9px;
+
+    }
+
+}
+   .started-item{
+   padding: 70px 40px 70px 40px;
+   background: #ffffff;
+   color: #000000;
+
+
+
+   &:hover{
+    background: crimson;
+    color: #ffffff;
+      i{
+        color: #ffffff;
+    }
+}
+i{
+    margin-bottom: 30px;
+    color: crimson;
+}
+   }
+  
+}
